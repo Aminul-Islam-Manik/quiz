@@ -1,0 +1,10 @@
+.quiz-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.quiz-img{
+    width: 40%;
+}
+.quiz{
+    width: 60%;
+}

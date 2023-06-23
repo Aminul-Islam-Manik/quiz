@@ -1,0 +1,6 @@
+.option{
+    display: flex;
+    border: 1px solid #ddd;
+    width: 337px;
+    padding: 0 10px;
+}

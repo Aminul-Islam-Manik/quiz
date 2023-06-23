@@ -1,0 +1,9 @@
+.layout-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.layout{
+    width: 100%;
+    padding: 30px 60px;
+    background: #f87373;
+}
