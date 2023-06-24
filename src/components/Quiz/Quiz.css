@@ -1,10 +1,13 @@
 .quiz-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .quiz-img{
     width: 40%;
 }
 .quiz{
-    width: 60%;
+    width: 49%;
+    /* padding: 69px; */
 }
