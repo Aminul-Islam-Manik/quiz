@@ -9,10 +9,17 @@ const Quiz = () => {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(1);
+    const [result, setResult] = useState(0);
 
     const handleAnswerOptionClick = () => {
-        const newScore = score + 1;
-        setScore(newScore);
+
+
+        if(score < quizes.data.questions.length){
+            const newScore = score + 1;
+            setScore(newScore);
+        }
+
+
 
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < allQuizes.length) {
@@ -20,8 +27,20 @@ const Quiz = () => {
 		} 
 	};
     const allQuizes = quizes.data.questions;
-
     // console.log(allQuizes)
+
+    const handleAnswerClick=(option)=>{
+
+        const selectedAnswer = option;
+        // console.log(selectedAnswer)
+        if(selectedAnswer===allQuizes[currentQuestion].correctAnswer){
+            const newResult = result + 5;
+            setResult(newResult);
+        }
+        else{
+            alert('this is wrong')
+        }
+    }
 
     return (
         <div className='quiz-wrapper'>
@@ -31,13 +50,13 @@ const Quiz = () => {
             <div className="quiz">
                 
                 <h4>Your quiz{score}/{quizes.data.questions.length}</h4>
+                Result:{result}
+
                 {allQuizes[currentQuestion].question}
+                {allQuizes[currentQuestion].correctAnswer}
 
                 {
-                    allQuizes[currentQuestion].options.map(option=><Option
-                    key={option.idx}
-                    option={option}
-                    ></Option>)
+                    allQuizes[currentQuestion].options.map(option=><Option key={option.idx} option={option} handleAnswerClick={handleAnswerClick}></Option>)
                 }
 
                 <button className="btn" onClick={()=>handleAnswerOptionClick()}>Next</button>
