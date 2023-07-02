@@ -4,8 +4,9 @@ import './Option.css'
 const Option = ({option, handleAnswerClick}) => {
     // console.log(option)
     return (
-        <div className='option'>
-            <p onClick={()=>handleAnswerClick(option)}>{option}</p>
+        <div className='option' onClick={()=>handleAnswerClick(option)}>
+            <input type="radio" />
+            <p>{option}</p>
         </div>
     );
 };

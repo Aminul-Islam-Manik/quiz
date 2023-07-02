@@ -3,5 +3,17 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    /* gap: 30px; */
+}
+.topics h1{
+    /* color: #1a1717b5; */
+    color: #ddb27a;
+    margin: 39px;
+    text-align: center;
+}
+.topics h3{
+    color: #ddb27a;
+    /* color: #ffffff; */
+    margin: 39px;
+    text-align: center;
 }

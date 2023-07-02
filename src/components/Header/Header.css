@@ -4,11 +4,16 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: #bbb;
-    padding: 19px 0;
+    background: #1a1717b5;
+    padding: 7px 0;
+}
+.logo h1{
+    padding: 0;
+    margin: 0;
+    font-size: xx-large;
 }
 .nav{
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -17,4 +22,7 @@
 }
 .nav a{
     text-decoration: none;
+    color: #ddb27a;
+    font-weight: bold;
+    font-size: 20px;
 }

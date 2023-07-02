@@ -5,7 +5,9 @@ import './Header.css';
 const Header = () => {
     return (
         <div className='header'>
-            <div className="logo">Logo</div> 
+            <div className="logo">
+                <h1>Quiz Hunter</h1>
+            </div> 
             <div className="nav">
                 {/* <NavLink to='/'>Home</NavLink> */}
                 <NavLink to='/'>Topics</NavLink>

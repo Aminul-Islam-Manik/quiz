@@ -8,7 +8,10 @@ const Topics = () => {
 
     return (
         <div className='topics'>
-            <h1>Quizzes are captivating assessments that combine learning with entertainment They provide an interactive and dynamic way to engage participants, evaluate comprehension , and faster deeper understanding of various subjects.So why late pls start now</h1>
+            <h3>Quizzes are captivating assessments that combine learning with entertainment They provide an interactive and dynamic way to engage participants, evaluate comprehension , and faster deeper understanding of various subjects.<br/>So why late pls start now</h3>
+
+            <h1>Choose Your Category</h1>
+            
             <div className="topics">
                 {
                     topics.data.map(topic=><Topic
